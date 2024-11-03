@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=https://aka.ms/configuration-dsc-schema/0.2
+properties:
+  resources:
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: GitHub.cli
+      directives:
+        description: Install GitHub Cli
+        allowPrerelease: true
+      settings:
+        id: "GitHub.cli"
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: JetBrains.Rider
+      directives:
+        description: Install Jetbrains Raider
+        allowPrerelease: true
+      settings:
+        id: "JetBrains.Rider"
+        source: winget
+  configurationVersion: 0.2.0  
+  
+ 

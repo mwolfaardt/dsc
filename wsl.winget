@@ -1,0 +1,31 @@
+# yaml-language-server: $schema=https://aka.ms/configuration-dsc-schema/0.2
+properties:
+  resources:
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: wslStore
+      directives:
+        description: WSL
+        allowPrerelease: true
+      settings:
+        id: "9P9TQF7MRM4R"
+        source: msstore
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: Canonical.Ubuntu.2204
+      dependsOn:
+        - wslStore
+      directives:
+       description: Ubuntu 22.04 LTS
+       allowPrerelease: true
+      settings:
+        id: Canonical.Ubuntu.2204
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      dependsOn:
+        - wslStore
+      directives:
+       description: Docker Desktop
+       allowPrerelease: true
+      settings:
+        id: Docker.DockerDesktop
+        source: winget     
+  configurationVersion: 0.2.0
