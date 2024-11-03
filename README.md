@@ -13,8 +13,13 @@ Powershell Desired State Configuration using Winget will configure Windows with 
 - [x] ShareX
 - [x] Devdrive
 # How to use
+```powershell
 winget configure .\{filename.winget} 
+
 winget configure .\autohotkey.winget
+```
+# Resources
+[Microsoft Learn] (https://learn.microsoft.com/en-us/windows/package-manager/winget)
 
 
       
