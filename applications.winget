@@ -1,0 +1,38 @@
+# yaml-language-server: $schema=https://aka.ms/configuration-dsc-schema/0.2
+properties:
+  resources:
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: AutoHotkey.AutoHotkey
+      directives:
+        description: Install AutoHotkey
+        allowPrerelease: true
+      settings:
+        id: "AutoHotkey.AutoHotkey"
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: Microsoft.Sysinternals.ZoomIt
+      directives:
+        description: Install ZoomIt
+        allowPrerelease: true
+      settings:
+        id: "Microsoft.Sysinternals.ZoomIt"
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: ShareX.ShareX
+      directives:
+        description: Install ShareX
+        allowPrerelease: true
+      settings:
+        id: "ShareX.ShareX"
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: Scribus.Scribus
+      directives:
+        description: Install Scribus
+        allowPrerelease: true
+      settings:
+        id: "Scribus.Scribus"
+        source: winget     
+  configurationVersion: 0.2.0  
+  
+ 
