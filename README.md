@@ -12,6 +12,8 @@ Powershell Desired State Configuration using Winget will configure Windows with 
 - [x] Clipself
 - [x] ShareX
 - [x] Devdrive
+- [ ] Zoom
+- [ ] OBS
 # How to use
 ```powershell
 winget configure .\{filename.winget} 
