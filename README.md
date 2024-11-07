@@ -14,6 +14,7 @@ Powershell Desired State Configuration using Winget will configure Windows with 
 - [x] Devdrive
 - [ ] Zoom
 - [ ] OBS
+- [ ] Scrcpy
 # How to use
 ```powershell
 winget configure .\{filename.winget} 
