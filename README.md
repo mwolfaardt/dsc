@@ -14,7 +14,7 @@ Powershell Desired State Configuration using Winget will configure Windows with 
 - [x] Devdrive
 - [ ] Zoom
 - [ ] OBS
-- [ ] Scrcpy
+- [x] Scrcpy
 - [x] Github Desktop
 - [x] Deckboard
 - [x] Touch Portal

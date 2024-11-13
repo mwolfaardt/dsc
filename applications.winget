@@ -64,7 +64,15 @@ properties:
         allowPrerelease: true
       settings:
         id: "RivaFarabi.Deckboard"
-        source: winget                            
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: Genymobile.scrcpy 
+      directives:
+        description: Install Genymobile Scrcpy
+        allowPrerelease: true
+      settings:
+        id: "Genymobile.scrcpy"
+        source: winget                                     
   configurationVersion: 0.2.0  
   
  
