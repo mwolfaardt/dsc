@@ -32,7 +32,39 @@ properties:
         allowPrerelease: true
       settings:
         id: "Scribus.Scribus"
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: Stellarium
+      directives:
+        description: Install Stellarium
+        allowPrerelease: true
+      settings:
+        id: "stellarium.stellarium"
         source: winget     
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: GitHub.GitHubDesktop
+      directives:
+        description: Install Github Desktop
+        allowPrerelease: true
+      settings:
+        id: "GitHub.GitHubDesktop"
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: Rils.TouchPortal
+      directives:
+        description: Install Touch Portal
+        allowPrerelease: true
+      settings:
+        id: "Rils.TouchPortal"
+        source: winget 
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: RivaFarabi.Deckboard
+      directives:
+        description: Install Deckboard
+        allowPrerelease: true
+      settings:
+        id: "RivaFarabi.Deckboard"
+        source: winget                            
   configurationVersion: 0.2.0  
   
  

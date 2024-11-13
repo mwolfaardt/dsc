@@ -15,6 +15,10 @@ Powershell Desired State Configuration using Winget will configure Windows with 
 - [ ] Zoom
 - [ ] OBS
 - [ ] Scrcpy
+- [x] Github Desktop
+- [x] Deckboard
+- [x] Touch Portal
+- [x] Stellarium
 # How to use
 ```powershell
 winget configure .\{filename.winget} 
