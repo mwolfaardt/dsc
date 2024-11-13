@@ -19,6 +19,7 @@ Powershell Desired State Configuration using Winget will configure Windows with 
 - [x] Deckboard
 - [x] Touch Portal
 - [x] Stellarium
+- [ ] Ontime https://getontime.no/
 # How to use
 ```powershell
 winget configure .\{filename.winget} 
