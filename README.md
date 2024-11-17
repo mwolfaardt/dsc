@@ -23,6 +23,7 @@ Powershell Desired State Configuration using Winget will configure Windows with 
 - [x] Google Chrome
 - [x] ScreenToGif
 - [x] .net 9
+- [ ] Youtube-dl
 # How to use
 ```powershell
 winget configure .\{filename.winget} 

@@ -96,7 +96,15 @@ properties:
         allowPrerelease: true
       settings:
         id: "Microsoft.DotNet.SDK.9"
-        source: winget                                                             
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: youtube-dl.youtube-dl
+      directives:
+        description: Install YouTube Downloader
+        allowPrerelease: true
+      settings:
+        id: "youtube-dl.youtube-dl"
+        source: winget                                                                       
   configurationVersion: 0.2.0  
   
  
