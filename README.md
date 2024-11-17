@@ -20,6 +20,7 @@ Powershell Desired State Configuration using Winget will configure Windows with 
 - [x] Touch Portal
 - [x] Stellarium
 - [ ] Ontime https://getontime.no/
+- [x] Google Chrome
 # How to use
 ```powershell
 winget configure .\{filename.winget} 

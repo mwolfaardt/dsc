@@ -72,7 +72,15 @@ properties:
         allowPrerelease: true
       settings:
         id: "Genymobile.scrcpy"
-        source: winget                                     
+        source: winget 
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: Google.Chrome 
+      directives:
+        description: Install Google Chrome
+        allowPrerelease: true
+      settings:
+        id: "Google.Chrome"
+        source: winget                                         
   configurationVersion: 0.2.0  
   
  
