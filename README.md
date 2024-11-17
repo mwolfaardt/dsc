@@ -21,6 +21,7 @@ Powershell Desired State Configuration using Winget will configure Windows with 
 - [x] Stellarium
 - [ ] Ontime https://getontime.no/
 - [x] Google Chrome
+- [ ] ScreenToGif
 # How to use
 ```powershell
 winget configure .\{filename.winget} 

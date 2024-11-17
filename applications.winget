@@ -80,7 +80,15 @@ properties:
         allowPrerelease: true
       settings:
         id: "Google.Chrome"
-        source: winget                                         
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: NickeManarin.ScreenToGif 
+      directives:
+        description: Install ScreenToGif
+        allowPrerelease: true
+      settings:
+        id: "NickeManarin.ScreenToGif"
+        source: winget                                                   
   configurationVersion: 0.2.0  
   
  
