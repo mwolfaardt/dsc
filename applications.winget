@@ -88,7 +88,15 @@ properties:
         allowPrerelease: true
       settings:
         id: "NickeManarin.ScreenToGif"
-        source: winget                                                   
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: Microsoft.DotNet.SDK.9
+      directives:
+        description: Microsoft .Net 9
+        allowPrerelease: true
+      settings:
+        id: "Microsoft.DotNet.SDK.9"
+        source: winget                                                             
   configurationVersion: 0.2.0  
   
  
