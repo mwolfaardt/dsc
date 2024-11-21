@@ -104,7 +104,35 @@ properties:
         allowPrerelease: true
       settings:
         id: "youtube-dl.youtube-dl"
-        source: winget                                                                       
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: TomEnglert.RegionToShare
+      directives:
+        description: Install RegionToShare
+        allowPrerelease: true
+      settings:
+        id: "TomEnglert.RegionToShare"
+        source: winget                                                                                   
+    - resource: PSDscResources/Script
+      id: RunPostInstallScript
+      directives:
+        description: Runs post script
+      settings:
+        GetScript: |
+           return @{Result = ''}
+        TestScript: |
+          $folderName = "Streaming"
+          $desktopPath = [System.Environment]::GetFolderPath("Desktop")
+          $folderPath = Join-Path -Path $desktopPath -ChildPath $folderName
+          if (-Not (Test-Path -Path $folderPath)) {return $false}
+        SetScript: |
+          $folderName = "Streaming"
+          $desktopPath = [System.Environment]::GetFolderPath("Desktop")
+          write-host $desktopPath
+          $folderPath = Join-Path -Path $desktopPath -ChildPath $folderName
+          New-Item -Path $folderPath -ItemType Directory                                                                                
+
+
   configurationVersion: 0.2.0  
   
  

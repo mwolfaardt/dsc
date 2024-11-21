@@ -5,26 +5,30 @@ Powershell Desired State Configuration using Winget will configure Windows with 
 - [x] Visual Studio Code
 - [x] Visual Studio
 - [x] Github
-- [x] Zoomit
 - [x] Scribus
-- [x] Autohotkey
 - [x] Scanner
 - [x] Clipself
 - [x] ShareX
 - [x] Devdrive
 - [ ] Zoom
-- [ ] OBS
-- [x] Scrcpy
 - [x] Github Desktop
-- [x] Deckboard
-- [x] Touch Portal
 - [x] Stellarium
-- [ ] Ontime https://getontime.no/
 - [x] Google Chrome
-- [x] ScreenToGif
 - [x] .net 9
 - [ ] Youtube-dl
 - [ ] ImageMagick
+
+# Screen recording, production, streaming
+- [x] ScreenToGif
+- [x] Touch Portal
+- [x] Deckboard
+- [x] Zoomit
+- [x] Autohotkey
+- [ ] OBS
+- [x] Scrcpy
+- [ ] Ontime https://getontime.no/
+- [ ] RegionToShare
+
 # How to use
 ```powershell
 winget configure .\{filename.winget} 
