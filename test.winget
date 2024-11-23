@@ -1,0 +1,29 @@
+# yaml-language-server: $schema=https://aka.ms/configuration-dsc-schema/0.2
+properties:
+  resources:
+    ########################################################################
+    # Section: Install PowerShell Modules
+    ########################################################################
+    # https://github.com/mkht/DSCR_Shortcut
+    - resource: PowerShellModule/PSModuleResource
+      id: install-DSCR_Shortcut
+      directives:
+        description: Install DSCR_Shortcut
+      settings:
+        Module_Name: DSCR_Shortcut
+        Ensure: Present
+    - resource: DSCR_Shortcut/cShortcut
+      id: CreateShortcut
+      directives:
+        description: Create ninja desktop shortcut
+        allowPrerelease: true
+      settings:
+        Ensure: Present
+        Path: "c:\\temp\\file.lnk"
+        Target: "C:\\Program Files\\Internet Explorer\\iexplore.exe"
+        Description: "Ninja"
+        WorkingDirectory: "C:\\temp"
+        Icon: "shell32.dll,277"
+  configurationVersion: 0.2.0
+  
+ 

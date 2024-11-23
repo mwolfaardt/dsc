@@ -124,15 +124,44 @@ properties:
           $folderName = "Streaming"
           $desktopPath = [System.Environment]::GetFolderPath("Desktop")
           $folderPath = Join-Path -Path $desktopPath -ChildPath $folderName
-          if (-Not (Test-Path -Path $folderPath)) {return $false}
+          if (-Not (Test-Path -Path $folderPath)) {return $false} else {return $true}
         SetScript: |
           $folderName = "Streaming"
           $desktopPath = [System.Environment]::GetFolderPath("Desktop")
           write-host $desktopPath
           $folderPath = Join-Path -Path $desktopPath -ChildPath $folderName
           New-Item -Path $folderPath -ItemType Directory                                                                                
-
-
-  configurationVersion: 0.2.0  
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: OMP
+      directives:
+        description: Install Oh My Posh
+        allowPrerelease: true
+      settings:
+        id: JanDeDobbeleer.OhMyPosh
+        source: winget
+    ########################################################################
+    # Section: Install PowerShell Modules
+    ########################################################################
+    # https://github.com/mkht/DSCR_Shortcut
+    - resource: PowerShellModule/PSModuleResource
+      id: install-DSCR_Shortcut
+      directives:
+        description: Install DSCR_Shortcut
+      settings:
+        Module_Name: DSCR_Shortcut
+        Ensure: Present
+    - resource: DSCR_Shortcut/cShortcut
+      id: CreateShortcut
+      directives:
+        description: Create ninja desktop shortcut
+        allowPrerelease: true
+      settings:
+        Ensure: Present
+        Path: "c:\\temp\\file.lnk"
+        Target: "C:\\Program Files\\Internet Explorer\\iexplore.exe"
+        Description: "Ninja"
+        WorkingDirectory: "C:\\temp"
+        Icon: "shell32.dll,277"
+  configurationVersion: 0.2.0
   
  
