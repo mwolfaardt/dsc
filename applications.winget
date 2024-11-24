@@ -153,14 +153,13 @@ properties:
     - resource: DSCR_Shortcut/cShortcut
       id: CreateShortcut
       directives:
-        description: Create ninja desktop shortcut
+        description: Create VDO.Ninja desktop shortcut
         allowPrerelease: true
       settings:
         Ensure: Present
-        Path: "c:\\temp\\file.lnk"
-        Target: "C:\\Program Files\\Internet Explorer\\iexplore.exe"
-        Description: "Ninja"
-        WorkingDirectory: "C:\\temp"
+        Path: "C:\\Users\\morne\\OneDrive\\Desktop\\Streaming\\VDO.lnk"
+        Target: "https://vdo.ninja/"
+        Description: "VDO.Ninga"
         Icon: "shell32.dll,277"
   configurationVersion: 0.2.0
   
