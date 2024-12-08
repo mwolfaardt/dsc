@@ -15,7 +15,7 @@ properties:
         allowPrerelease: true
       settings:
         Ensure: Present
-        Path: "c:\\Users\\${env:USERNAME}\\Desktop\\Streaming\\VDO.lnk"
+        Path: "c:\\Users\\\\Desktop\\Streaming\\VDO.lnk"
         Target: "https://vdo.ninja/"
         Description: "VDO.Ninga"
         Icon: "shell32.dll,277"

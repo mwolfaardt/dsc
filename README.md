@@ -17,6 +17,8 @@ Powershell Desired State Configuration using Winget will configure Windows with 
 - [x] .net 9
 - [ ] Youtube-dl
 - [ ] ImageMagick
+- [x] Google Quickshare
+- [x] Tailscale
 
 # Screen recording, production, streaming
 - [x] ScreenToGif
@@ -24,10 +26,20 @@ Powershell Desired State Configuration using Winget will configure Windows with 
 - [x] Deckboard
 - [x] Zoomit
 - [x] Autohotkey
-- [ ] OBS
+- [x] OBS
 - [x] Scrcpy
 - [ ] Ontime https://getontime.no/
 - [ ] RegionToShare
+
+# Graphics
+- [x] Inkscape
+
+# OBS Plugins
+- [ ] OBS Advance Mask https://obsproject.com/forum/resources/advanced-masks.1856/ or https://github.com/FiniteSingularity/obs-advanced-masks/releases/tag/v1.1.0
+- [ ] Stroke Plugin https://obsproject.com/forum/resources/stroke-glow-shadow.1800/
+- [ ] Gradient Plugin https://obsproject.com/forum/resources/gradient-source.1172/
+- [ ] OBS Shader Filter https://obsproject.com/forum/resources/obs-shaderfilter.1736/
+- [ ] Move Plugin
 
 # How to use
 ```powershell

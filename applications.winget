@@ -10,6 +10,22 @@ properties:
         id: "AutoHotkey.AutoHotkey"
         source: winget
     - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: OBSProject.OBSStudio
+      directives:
+        description: Install OBS
+        allowPrerelease: true
+      settings:
+        id: "OBSProject.OBSStudio"
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: tailscale.tailscale
+      directives:
+        description: Install tailscale
+        allowPrerelease: true
+      settings:
+        id: "tailscale.tailscale"
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
       id: Microsoft.Sysinternals.ZoomIt
       directives:
         description: Install ZoomIt
@@ -80,6 +96,23 @@ properties:
         allowPrerelease: true
       settings:
         id: "Google.Chrome"
+        source: winget
+    #### Google Quick Share ###    
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: Google.QuickShare
+      directives:
+        description: Install Google Quickshare
+        allowPrerelease: true
+      settings:
+        id: "Google.QuickShare"
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: Inkscape.Inkscape
+      directives:
+        description: Install Inkscape
+        allowPrerelease: true
+      settings:
+        id: "Inkscape.Inkscape"
         source: winget
     - resource: Microsoft.WinGet.DSC/WinGetPackage
       id: NickeManarin.ScreenToGif 
@@ -161,6 +194,27 @@ properties:
         Target: "https://vdo.ninja/"
         Description: "VDO.Ninga"
         Icon: "shell32.dll,277"
+    - resource: DSCR_Shortcut/cShortcut
+      id: CreatePairdrop
+      directives:
+        description: Create Pairdrop desktop shortcut
+        allowPrerelease: true
+      settings:
+        Ensure: Present
+        Path: "C:\\Users\\morne\\OneDrive\\Desktop\\pairdrop.lnk"
+        Target: "https://pairdrop.net"
+        Description: "Pairdrop.net"
+    - resource: DSCR_Shortcut/cShortcut
+      id: CreateFXMagician
+      directives:
+        description: Create http://fxmagician.live/ desktop shortcut
+        allowPrerelease: true
+      settings:
+        Ensure: Present
+        Path: "C:\\Users\\morne\\OneDrive\\Desktop\\Streaming\\fx-magician.lnk"
+        Target: "http://fxmagician.live/"
+        Description: "FX Magician"
+
   configurationVersion: 0.2.0
   
  
