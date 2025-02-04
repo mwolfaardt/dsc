@@ -2,6 +2,30 @@
 properties:
   resources:
     - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: touchbyte.PhotoSync
+      directives:
+        description: Install PhotoSync
+        allowPrerelease: true
+      settings:
+        id: "touchbyte.PhotoSync"
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: Ollama.Ollama
+      directives:
+        description: Install Ollama
+        allowPrerelease: true
+      settings:
+        id: "Ollama.Ollama"
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: PDFgear.Pdfgear
+      directives:
+        description: Install PDFGear
+        allowPrerelease: true
+      settings:
+        id: "PDFgear.PDFgear"
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
       id: AutoHotkey.AutoHotkey
       directives:
         description: Install AutoHotkey
@@ -56,7 +80,7 @@ properties:
         allowPrerelease: true
       settings:
         id: "stellarium.stellarium"
-        source: winget     
+        source: winget
     - resource: Microsoft.WinGet.DSC/WinGetPackage
       id: GitHub.GitHubDesktop
       directives:
@@ -72,7 +96,7 @@ properties:
         allowPrerelease: true
       settings:
         id: "Rils.TouchPortal"
-        source: winget 
+        source: winget
     - resource: Microsoft.WinGet.DSC/WinGetPackage
       id: RivaFarabi.Deckboard
       directives:
@@ -82,22 +106,22 @@ properties:
         id: "RivaFarabi.Deckboard"
         source: winget
     - resource: Microsoft.WinGet.DSC/WinGetPackage
-      id: Genymobile.scrcpy 
+      id: Genymobile.scrcpy
       directives:
         description: Install Genymobile Scrcpy
         allowPrerelease: true
       settings:
         id: "Genymobile.scrcpy"
-        source: winget 
+        source: winget
     - resource: Microsoft.WinGet.DSC/WinGetPackage
-      id: Google.Chrome 
+      id: Google.Chrome
       directives:
         description: Install Google Chrome
         allowPrerelease: true
       settings:
         id: "Google.Chrome"
         source: winget
-    #### Google Quick Share ###    
+    #### Google Quick Share ###
     - resource: Microsoft.WinGet.DSC/WinGetPackage
       id: Google.QuickShare
       directives:
@@ -115,7 +139,7 @@ properties:
         id: "Inkscape.Inkscape"
         source: winget
     - resource: Microsoft.WinGet.DSC/WinGetPackage
-      id: NickeManarin.ScreenToGif 
+      id: NickeManarin.ScreenToGif
       directives:
         description: Install ScreenToGif
         allowPrerelease: true
@@ -145,14 +169,14 @@ properties:
         allowPrerelease: true
       settings:
         id: "TomEnglert.RegionToShare"
-        source: winget                                                                                   
+        source: winget
     - resource: PSDscResources/Script
       id: RunPostInstallScript
       directives:
         description: Runs post script
       settings:
         GetScript: |
-           return @{Result = ''}
+          return @{Result = ''}
         TestScript: |
           $folderName = "Streaming"
           $desktopPath = [System.Environment]::GetFolderPath("Desktop")
@@ -163,7 +187,7 @@ properties:
           $desktopPath = [System.Environment]::GetFolderPath("Desktop")
           write-host $desktopPath
           $folderPath = Join-Path -Path $desktopPath -ChildPath $folderName
-          New-Item -Path $folderPath -ItemType Directory                                                                                
+          New-Item -Path $folderPath -ItemType Directory
     - resource: Microsoft.WinGet.DSC/WinGetPackage
       id: OMP
       directives:
@@ -216,5 +240,3 @@ properties:
         Description: "FX Magician"
 
   configurationVersion: 0.2.0
-  
- 

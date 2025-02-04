@@ -1,7 +1,9 @@
 # Desired State Configuration using WinGet
-Powershell Desired State Configuration using Winget will configure Windows with the desired state when you setup a new / existing maching. The powerful winget files will install and configure your machine with all your favourite applications using a predefined file. 
 
-# Applications List 
+Powershell Desired State Configuration using Winget will configure Windows with the desired state when you setup a new / existing maching. The powerful winget files will install and configure your machine with all your favourite applications using a predefined file.
+
+# Applications List
+
 - [x] Visual Studio Code
 - [x] Visual Studio
 - [x] Github
@@ -19,8 +21,12 @@ Powershell Desired State Configuration using Winget will configure Windows with 
 - [ ] ImageMagick
 - [x] Google Quickshare
 - [x] Tailscale
+- [x] PDFGear
+- [x] Photosync
+- [x] Ollama
 
 # Screen recording, production, streaming
+
 - [x] ScreenToGif
 - [x] Touch Portal
 - [x] Deckboard
@@ -32,9 +38,11 @@ Powershell Desired State Configuration using Winget will configure Windows with 
 - [ ] RegionToShare
 
 # Graphics
+
 - [x] Inkscape
 
 # OBS Plugins
+
 - [ ] OBS Advance Mask https://obsproject.com/forum/resources/advanced-masks.1856/ or https://github.com/FiniteSingularity/obs-advanced-masks/releases/tag/v1.1.0
 - [ ] Stroke Plugin https://obsproject.com/forum/resources/stroke-glow-shadow.1800/
 - [ ] Gradient Plugin https://obsproject.com/forum/resources/gradient-source.1172/
@@ -42,15 +50,13 @@ Powershell Desired State Configuration using Winget will configure Windows with 
 - [ ] Move Plugin
 
 # How to use
+
 ```powershell
-winget configure .\{filename.winget} 
+winget configure .\{filename.winget}
 
 winget configure .\autohotkey.winget
 ```
+
 # Resources
+
 [Microsoft Learn] (https://learn.microsoft.com/en-us/windows/package-manager/winget)
-
-
-      
-
-
