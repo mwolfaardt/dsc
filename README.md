@@ -24,6 +24,7 @@ Powershell Desired State Configuration using Winget will configure Windows with 
 - [x] PDFGear
 - [x] Photosync
 - [x] Ollama
+- [x] [NAPS2](https://www.naps2.com/) - Scanner
 
 # Screen recording, production, streaming
 
@@ -48,6 +49,10 @@ Powershell Desired State Configuration using Winget will configure Windows with 
 - [ ] Gradient Plugin https://obsproject.com/forum/resources/gradient-source.1172/
 - [ ] OBS Shader Filter https://obsproject.com/forum/resources/obs-shaderfilter.1736/
 - [ ] Move Plugin
+
+# Shortcuts
+
+- [x] Pairdrop
 
 # How to use
 

@@ -2,6 +2,14 @@
 properties:
   resources:
     - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: Cyanfish.NAPS2
+      directives:
+        description: Install Naps2
+        allowPrerelease: true
+      settings:
+        id: "Cyanfish.NAPS2"
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
       id: touchbyte.PhotoSync
       directives:
         description: Install PhotoSync
