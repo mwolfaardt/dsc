@@ -25,6 +25,7 @@ Powershell Desired State Configuration using Winget will configure Windows with 
 - [x] Photosync
 - [x] Ollama
 - [x] [NAPS2](https://www.naps2.com/) - Scanner
+- [x] [Expanso] (https://espanso.org/docs/get-started/) - Text Expander
 
 # Screen recording, production, streaming
 

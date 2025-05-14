@@ -10,6 +10,14 @@ properties:
         id: "Cyanfish.NAPS2"
         source: winget
     - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: Espanso.Espanso
+      directives:
+        description: Install Espanso
+        allowPrerelease: true
+      settings:
+        id: "Espanso.Espanso"
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
       id: touchbyte.PhotoSync
       directives:
         description: Install PhotoSync
