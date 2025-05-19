@@ -42,6 +42,8 @@ Powershell Desired State Configuration using Winget will configure Windows with 
 # Graphics
 
 - [x] Inkscape
+- [ ] Inkscape extentions
+- [ ] Draw.IO
 
 # OBS Plugins
 
