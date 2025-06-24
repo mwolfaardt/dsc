@@ -23,9 +23,16 @@ Powershell Desired State Configuration using Winget will configure Windows with 
 - [x] Tailscale
 - [x] PDFGear
 - [x] Photosync
-- [x] Ollama
 - [x] [NAPS2](https://www.naps2.com/) - Scanner
 - [x] [Expanso] (https://espanso.org/docs/get-started/) - Text Expander
+
+# AI
+- [x] AI Foundry
+- [x] Ollama
+
+# File Managers
+- [ ] Files Community
+- [ ] XYPlorer
 
 # Screen recording, production, streaming
 

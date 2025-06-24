@@ -2,6 +2,22 @@
 properties:
   resources:
     - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: Microsoft.FoundryLocal
+      directives:
+        description: Install Microsoft AI Foundry
+        allowPrerelease: true
+      settings:
+        id: "Microsoft.FoundryLocal"
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: FilesCommunity.Files
+      directives:
+        description: Install Files FilesCommunity
+        allowPrerelease: true
+      settings:
+        id: "FilesCommunity.Files"
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
       id: Cyanfish.NAPS2
       directives:
         description: Install Naps2
