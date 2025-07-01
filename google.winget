@@ -1,0 +1,31 @@
+# yaml-language-server: $schema=https://aka.ms/configuration-dsc-schema/0.2
+properties:
+  resources:
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: npm
+      directives:
+        description: Install Node version 18
+        securityContext: elevated
+      settings:
+        id: OpenJS.NodeJS
+        source: winget
+    - resource: NpmDsc/NpmInstall
+      dependsOn:
+        - npm
+      directives:
+        description: Run 'npm install'
+        allowPrerelease: true
+      settings:
+        PackageDirectory: '${WinGetConfigRoot}\..\'
+    - resource: NpmDsc/NpmPackage
+      id: "@google/gemini-cli"
+      dependsOn:
+        - npm
+      directives:
+        description: Install Google Gemini CLI
+        allowPrerelease: true
+      settings:
+        Name: "@google/gemini-cli"
+        Global: true
+        PackageDirectory: '${WinGetConfigRoot}\..\'
+  configurationVersion: 0.2.0

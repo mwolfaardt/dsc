@@ -2,6 +2,14 @@
 properties:
   resources:
     - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: BlenderFoundation.Blender
+      directives:
+        description: Install Blender
+        allowPrerelease: true
+      settings:
+        id: "BlenderFoundation.Blender"
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
       id: Microsoft.FoundryLocal
       directives:
         description: Install Microsoft AI Foundry
@@ -270,5 +278,34 @@ properties:
         Path: "C:\\Users\\morne\\OneDrive\\Desktop\\Streaming\\fx-magician.lnk"
         Target: "http://fxmagician.live/"
         Description: "FX Magician"
-
+    ####################################################
+    # Gemeni CLI Install
+    ####################################################
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: npm
+      directives:
+        description: Install Node version 18
+        securityContext: elevated
+      settings:
+        id: OpenJS.NodeJS
+        source: winget
+    # - resource: NpmDsc/NpmInstall
+    #   dependsOn:
+    #     - npm
+    #   directives:
+    #     description: Run 'npm install'
+    #     allowPrerelease: true
+    #   settings:
+    #     PackageDirectory: '${WinGetConfigRoot}\..\'
+    - resource: NpmDsc/NpmPackage
+      id: "@google/gemini-cli"
+      dependsOn:
+        - npm
+      directives:
+        description: Install Google Gemini CLI
+        allowPrerelease: true
+      settings:
+        Name: "@google/gemini-cli"
+        Global: true
+        # PackageDirectory: '${WinGetConfigRoot}\..\'
   configurationVersion: 0.2.0
