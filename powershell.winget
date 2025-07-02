@@ -1,0 +1,14 @@
+# yaml-language-server: $schema=https://aka.ms/configuration-dsc-schema/0.2
+properties:
+  resources:
+    # Update PowerShell
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: Microsoft.PowerShell
+      directives:
+        description: Ensure latest PowerShell is installed
+        securityContext: elevated
+      settings:
+        id: "Microsoft.Powershell"
+        source: winget
+
+  configurationVersion: 0.2.0

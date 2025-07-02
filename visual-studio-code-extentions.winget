@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=https://aka.ms/configuration-dsc-schema/0.2
+# Reference: https://github.com/microsoft/winget-cli#building-the-client
+properties:
+  resources:
+    - resource: Microsoft.VSCode.DSC/VSCodeExtension
+      id: install-Google.geminicodeassist
+      directives:
+        description: Install Google Code Assist Extension
+        allowPrerelease: true
+      settings:
+        name: Google.geminicodeassist
+        exist: true
+  configurationVersion: 0.2.0

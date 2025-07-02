@@ -25,10 +25,12 @@ Powershell Desired State Configuration using Winget will configure Windows with 
 - [x] Photosync
 - [x] [NAPS2](https://www.naps2.com/) - Scanner
 - [x] [Expanso] (https://espanso.org/docs/get-started/) - Text Expander
+- [x] Upgrade Powershell to latest version
 
 # AI
 - [x] AI Foundry
 - [x] Ollama
+- [x] Google Gemini-Cli
 
 # File Managers
 - [ ] Files Community

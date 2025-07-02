@@ -308,4 +308,14 @@ properties:
         Name: "@google/gemini-cli"
         Global: true
         # PackageDirectory: '${WinGetConfigRoot}\..\'
+
+    # Update PowerShell
+    - resource: winget
+      id: Microsoft.Powershell
+      directives:
+        description: Ensure latest PowerShell is installed
+      settings:
+        source: winget
+        installBehavior: upgrade
+
   configurationVersion: 0.2.0
