@@ -33,7 +33,7 @@ Powershell Desired State Configuration using Winget will configure Windows with 
 - [x] Google Gemini-Cli
 
 # File Managers
-- [ ] Files Community
+- [x] Files Community
 - [ ] XYPlorer
 
 # Screen recording, production, streaming
@@ -47,6 +47,7 @@ Powershell Desired State Configuration using Winget will configure Windows with 
 - [x] Scrcpy
 - [ ] Ontime https://getontime.no/
 - [ ] RegionToShare
+- [x] VLC
 
 # Graphics
 
@@ -77,3 +78,4 @@ winget configure .\autohotkey.winget
 # Resources
 
 [Microsoft Learn] (https://learn.microsoft.com/en-us/windows/package-manager/winget)
+[WingetCollections] (https://winget.ragerworks.com/)
