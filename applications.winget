@@ -2,6 +2,14 @@
 properties:
   resources:
     - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: 9NVTPZWRC6KQ
+      directives:
+        description: Install DSC 3
+        allowPrerelease: false
+      settings:
+        id: "9NVTPZWRC6KQ"
+        source: msstore
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
       id: BlenderFoundation.Blender
       directives:
         description: Install Blender
@@ -235,6 +243,14 @@ properties:
         allowPrerelease: true
       settings:
         id: JanDeDobbeleer.OhMyPosh
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: VideoLAN.VLC
+      directives:
+        description: Install VLC Media Player
+        allowPrerelease: true
+      settings:
+        id: VideoLAN.VLC
         source: winget
     ########################################################################
     # Section: Install PowerShell Modules
