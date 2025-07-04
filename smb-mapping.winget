@@ -10,6 +10,7 @@ properties:
         GetScript: |
           return @{ Result = (Get-SmbMapping -RemotePath '\\blue\Documents'  -ErrorAction SilentlyContinue) }
         SetScript: |
+          # Update username and password as needed
           New-SmbMapping -RemotePath '\\blue\Documents' -LocalPath 'Z:' -Persistent $true -UserName 'morne' -Password 'xx'
         TestScript: |
           $mapping = Get-SmbMapping -RemotePath '\\blue\Documents' -ErrorAction SilentlyContinue
