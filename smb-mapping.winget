@@ -1,0 +1,18 @@
+# yaml-language-server: $schema=https://aka.ms/configuration-dsc-schema/0.2
+properties:
+  resources:
+    - resource: PSDscResources/Script
+      id: MapSmbShare
+      directives:
+        description: "Map remote SMB share to drive Z:"
+        securityContext: elevated
+      settings:
+        GetScript: |
+          return @{ Result = (Get-SmbMapping -RemotePath '\\blue\Documents'  -ErrorAction SilentlyContinue) }
+        SetScript: |
+          New-SmbMapping -RemotePath '\\blue\Documents' -LocalPath 'Z:' -Persistent $true -UserName 'morne' -Password 'xx'
+        TestScript: |
+          $mapping = Get-SmbMapping -RemotePath '\\blue\Documents' -ErrorAction SilentlyContinue
+          return $mapping -ne $null
+
+  configurationVersion: 0.2.0
