@@ -283,6 +283,7 @@ properties:
         Ensure: Present
         Path: "C:\\Users\\morne\\OneDrive\\Desktop\\pairdrop.lnk"
         Target: "https://pairdrop.net"
+        Icon: "C:\\icons\\pairdrop.ico"
         Description: "Pairdrop.net"
     - resource: DSCR_Shortcut/cShortcut
       id: CreateFXMagician
@@ -333,5 +334,12 @@ properties:
       settings:
         source: winget
         installBehavior: upgrade
-
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: Datronicsoft.SpacedeskDriver.Server
+      directives:
+        description: SpaceDesk
+        allowPrerelease: true
+      settings:
+        id: "Datronicsoft.SpacedeskDriver.Server"
+        source: winget
   configurationVersion: 0.2.0

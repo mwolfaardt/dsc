@@ -48,6 +48,7 @@ Powershell Desired State Configuration using Winget will configure Windows with 
 - [ ] Ontime https://getontime.no/
 - [ ] RegionToShare
 - [x] VLC
+- [x] Spacedesk
 
 # Graphics
 
@@ -79,3 +80,6 @@ winget configure .\autohotkey.winget
 
 [Microsoft Learn] (https://learn.microsoft.com/en-us/windows/package-manager/winget)
 [WingetCollections] (https://winget.ragerworks.com/)
+
+# Visual Studio Code Snippets
+I've create a new visual studio code snippet in the .vscode folder. You can now just type DSC-Winget and it will generate the YAML for you.

@@ -1,0 +1,16 @@
+{
+  "DCS-Winget": {
+    "prefix": "DSC-Winget",
+    "body": [
+      "- resource: Microsoft.WinGet.DSC/WinGetPackage",
+      "  id: Microsoft.DotNet.SDK.9",
+      "  directives:",
+      "    description: Microsoft .Net 9",
+      "    allowPrerelease: true",
+      "  settings:",
+      "    id: \"Microsoft.DotNet.SDK.9\"",
+      "    source: winget"
+    ],
+    "description": "Insert a DSC YAML resource for .NET 9 via WinGet"
+  }
+}
