@@ -1,0 +1,12 @@
+# yaml-language-server: $schema=https://aka.ms/configuration-dsc-schema/0.2
+properties:
+  resources:
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: Mozilla.Firefox
+      directives:
+        description: Mozilla Firefox
+        allowPrerelease: true
+      settings:
+        id: "Mozilla.Firefox"
+        source: winget
+  configurationVersion: 0.2.0
