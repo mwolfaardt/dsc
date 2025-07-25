@@ -114,6 +114,14 @@ properties:
         id: "ShareX.ShareX"
         source: winget
     - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: 9NSR8XQ43R7Q
+      directives:
+        description: Install shortcutKeeper
+        allowPrerelease: true
+      settings:
+        id: "9NSR8XQ43R7Q"
+        source: msstore
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
       id: Scribus.Scribus
       directives:
         description: Install Scribus

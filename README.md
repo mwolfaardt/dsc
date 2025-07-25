@@ -67,6 +67,7 @@ Powershell Desired State Configuration using Winget will configure Windows with 
 # Shortcuts
 
 - [x] Pairdrop
+- [x] [Shortcutkeeper](https://shortcutkeeper.com/windows.html)
 
 # How to use
 
