@@ -56,6 +56,7 @@ Powershell Desired State Configuration using Winget will configure Windows with 
 - [ ] Inkscape extentions
 - [ ] Draw.IO
 - [x] Blender
+- [x] Gimp
 # OBS Plugins
 
 - [ ] OBS Advance Mask https://obsproject.com/forum/resources/advanced-masks.1856/ or https://github.com/FiniteSingularity/obs-advanced-masks/releases/tag/v1.1.0

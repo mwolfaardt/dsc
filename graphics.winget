@@ -1,0 +1,12 @@
+# yaml-language-server: $schema=https://aka.ms/configuration-dsc-schema/0.2
+properties:
+  resources:
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: 9PNSJCLXDZ0V
+      directives:
+        description: Install Gimp
+        allowPrerelease: false
+      settings:
+        id: "9PNSJCLXDZ0V"
+        source: msstore
+  configurationVersion: 0.2.0
