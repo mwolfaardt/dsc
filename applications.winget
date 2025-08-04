@@ -2,6 +2,14 @@
 properties:
   resources:
     - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: 9NBLGGH516XP 
+      directives:
+        description: Install EarTrumpet
+        allowPrerelease: false
+      settings:
+        id: "9NBLGGH516XP"
+        source: msstore
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
       id: 9NVTPZWRC6KQ
       directives:
         description: Install DSC 3

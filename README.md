@@ -49,6 +49,7 @@ Powershell Desired State Configuration using Winget will configure Windows with 
 - [ ] RegionToShare
 - [x] VLC
 - [x] Spacedesk
+- [x] EarTrumpet
 
 # Graphics
 
