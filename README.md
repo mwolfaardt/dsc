@@ -81,6 +81,12 @@ winget configure .\{filename.winget}
 winget configure .\autohotkey.winget
 ```
 
+# Update all your installed packages
+Run Powershell as Administrator to help with  user account prompt asking if you want to install the application.Run the below command
+```powershell
+winget upgrade all --silient
+```
+
 # Resources
 
 [Microsoft Learn] (https://learn.microsoft.com/en-us/windows/package-manager/winget)
