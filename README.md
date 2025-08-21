@@ -51,6 +51,8 @@ Powershell Desired State Configuration using Winget will configure Windows with 
 - [x] Spacedesk
 - [x] EarTrumpet
 
+# PowerToys Extentions
+ - [ ] Timezone Convertor (Power Commandlet) 9P4TC0QM648H
 # Graphics
 
 - [x] Inkscape
