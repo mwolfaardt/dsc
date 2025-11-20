@@ -60,6 +60,8 @@ Powershell Desired State Configuration using Winget will configure Windows with 
 - [ ] Draw.IO
 - [x] Blender
 - [x] Gimp
+- [ ] [PPInk](https://github.com/pubpub-zz/ppInk)
+
 # OBS Plugins
 
 - [ ] OBS Advance Mask https://obsproject.com/forum/resources/advanced-masks.1856/ or https://github.com/FiniteSingularity/obs-advanced-masks/releases/tag/v1.1.0
@@ -72,6 +74,10 @@ Powershell Desired State Configuration using Winget will configure Windows with 
 
 - [x] Pairdrop
 - [x] [Shortcutkeeper](https://shortcutkeeper.com/windows.html)
+
+# Windows Utilities
+- [ ] [NileSoft Shell](https://nilesoft.org/)
+
 
 # How to use
 

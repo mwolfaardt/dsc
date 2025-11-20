@@ -358,4 +358,13 @@ properties:
       settings:
         id: "Datronicsoft.SpacedeskDriver.Server"
         source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: Nilesoft.Shell
+      directives:
+        description: SpaceDesk
+        allowPrerelease: true
+      settings:
+        id: "Nilesoft.Shell"
+        source: winget
+  
   configurationVersion: 0.2.0
