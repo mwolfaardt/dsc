@@ -366,5 +366,13 @@ properties:
       settings:
         id: "Nilesoft.Shell"
         source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: Bitwarden.Bitwarden
+      directives:
+        description: Bitwarden Password Manager
+        allowPrerelease: true
+      settings:
+        id: "Bitwarden.Bitwarden"
+        source: winget    
   
   configurationVersion: 0.2.0

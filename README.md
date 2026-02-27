@@ -61,6 +61,7 @@ Powershell Desired State Configuration using Winget will configure Windows with 
 - [x] Blender
 - [x] Gimp
 - [ ] [PPInk](https://github.com/pubpub-zz/ppInk)
+- [ ] Ifranview
 
 # OBS Plugins
 
@@ -77,6 +78,9 @@ Powershell Desired State Configuration using Winget will configure Windows with 
 
 # Windows Utilities
 - [ ] [NileSoft Shell](https://nilesoft.org/)
+
+# Security
+- [x] [Bitwarden](https://www.bitwarden.com)
 
 
 # How to use
