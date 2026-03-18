@@ -1,0 +1,31 @@
+# yaml-language-server: $schema=https://aka.ms/configuration-dsc-schema/0.2
+properties:
+  resources:
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: 9pp2b76lqqbn 
+      directives:
+        description: Install Stretchly
+        allowPrerelease: false
+      settings:
+        id: "9pp2b76lqqbn"
+        source: msstore
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: 9NQJLCPCKQX5 
+      directives:
+        description: Install Big Stretch Reminder
+        allowPrerelease: false
+      settings:
+        id: "9NQJLCPCKQX5"
+        source: msstore
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: Workrave.Workrave
+      directives:
+        description: Install Workrave
+        allowPrerelease: true
+      settings:
+        id: "Workrave.Workrave"
+        source: winget         
+  
+  configurationVersion: 0.2.0
+
+
