@@ -330,18 +330,6 @@ properties:
     #     allowPrerelease: true
     #   settings:
     #     PackageDirectory: '${WinGetConfigRoot}\..\'
-    - resource: NpmDsc/NpmPackage
-      id: "@google/gemini-cli"
-      dependsOn:
-        - npm
-      directives:
-        description: Install Google Gemini CLI
-        allowPrerelease: true
-      settings:
-        Name: "@google/gemini-cli"
-        Global: true
-        # PackageDirectory: '${WinGetConfigRoot}\..\'
-
     # Update PowerShell
     - resource: winget
       id: Microsoft.Powershell
@@ -373,6 +361,29 @@ properties:
         allowPrerelease: true
       settings:
         id: "Bitwarden.Bitwarden"
-        source: winget    
-  
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: Google.Antigravity
+      directives:
+        description: Google Antigravity
+        allowPrerelease: true
+      settings:
+        id: "Google.Antigravity"
+        source: winget              
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: Google.AntigravityCLI
+      directives:
+        description: Google Antigravity CLI
+        allowPrerelease: true
+      settings:
+        id: "Google.AntigravityCLI"
+        source: winget        
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: Google.AntigravityIDE
+      directives:
+        description: Google Antigravity IDE
+        allowPrerelease: true
+      settings:
+        id: "Google.AntigravityIDE"
+        source: winget                 
   configurationVersion: 0.2.0
