@@ -386,4 +386,12 @@ properties:
       settings:
         id: "Google.AntigravityIDE"
         source: winget                 
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: dongdongbh.Mindwtr
+      directives:
+        description: Mindwtr
+        allowPrerelease: true
+      settings:
+        id: "dongdongbh.Mindwtr"
+        source: winget
   configurationVersion: 0.2.0
